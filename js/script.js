@@ -24,4 +24,8 @@ function prevSlide() {
         slideIndex-=2;
         showSlide(slideIndex);
     }
+    else if(slideIndex <=0) {
+        slideIndex = slides.length+2;
+        showSlide(slideIndex);
+    }
 }
