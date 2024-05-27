@@ -1,13 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
 .carousel {
     display: flex;
     overflow: hidden;
     width: 200px;
     height: 200px;
+    
 }
 
 .slide {
     flex: 0 0 100%;
-    transition: transform 1s ease; /* Adjust transition timing here */
+    transition: transform 1s ease; 
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -27,4 +36,17 @@
 
 .yellow {
     background-color: yellow;
+}
+
+button {
+    position: absolute;
+    top: calc(50% - 20px); /* Center the button vertically */
+}
+
+button:nth-of-type(1) {
+    left: 10px; 
+}
+
+button:nth-of-type(2) {
+    right: 10px; 
 }
