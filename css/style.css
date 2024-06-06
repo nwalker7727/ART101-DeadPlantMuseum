@@ -79,8 +79,8 @@ h1 {
     top: calc(50% - 20px);
 }
 
-.arrow-button {
-    background-color: #d1c4af;
+.arrow-button-left {
+    background-color: #454444;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -91,30 +91,42 @@ h1 {
     height: 100px;
 }
 
-.arrow-button::before #left{
+.arrow-button-left::before {
     content: "";
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50px;
+    transform: translate(-50%, -50%) rotate(225deg);
     width: 50px;
     height: 50px;
-    transform: translate(-50%, -50%) rotate(225deg);
-    border-right: 2px solid rgb(0, 0, 0);
-    border-top: 2px solid rgb(0, 0, 0);
-    background-color: #d1c4af;
+    border-right: 8px solid #d1c4af;
+    border-top: 8px solid #d1c4af;
+    background-color: #454444;
 }
 
-.arrow-button::before #right{
+.arrow-button-right {
+    background-color: #454444;
+    color: #d1c4af;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+}
+
+.arrow-button-right::before {
     content: "";
     position: absolute;
     top: 50%;
-    left: 50%;
+    right: 50px;
+    transform: translate(50%, -50%) rotate(45deg);
     width: 50px;
     height: 50px;
-    transform: translate(-50%, -50%) rotate(225deg);
-    border-right: 2px solid rgb(0, 0, 0);
-    border-top: 2px solid rgb(0, 0, 0);
-    background-color: #d1c4af;
+    border-right: 8px solid #d1c4af;
+    border-top: 8px solid #d1c4af;
+    background-color: #454444;
 }
 
 /* General Styles */
@@ -204,6 +216,9 @@ a:hover {
 }
 
 #disease {
+    font-size: large;
+    width: 300px;
+    height: 50px;
     background-color: #454444;
     color: #d1c4af;
 }
