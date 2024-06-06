@@ -77,6 +77,28 @@ h1 {
     top: calc(50% - 20px); 
 }
 
+.arrow-button {
+    background-color: #d1c4af;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.arrow-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(225deg);
+    width: 15px;
+    height: 15px;
+    border-right: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgb(0, 0, 0);
+    background-color: #d1c4af;
+}
 
 .carousel {
     display: flex;
