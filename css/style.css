@@ -1,210 +1,213 @@
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .carousel-container {
-    background-image: url('../img/bg1.jpg');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    position: relative;
+  background-image: url("../img/bg1.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
 }
 
 .carousel {
-    display: flex;
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
+  display: flex;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
 }
 
 .slide {
-    flex: 0 0 100%;
-    transition: transform 1s ease;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    position: relative;
+  flex: 0 0 100%;
+  transition: transform 1s ease;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .slide-text-container {
-    position: absolute;
-    bottom: -30px; /* Adjust this value to move text closer or further from the carousel */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+  position: absolute;
+  bottom: -30px; /* Adjust this value to move text closer or further from the carousel */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
 }
 
 .slide-text {
-    display: none; /* Hide all text initially */
-    text-align: center;
-    font-size: 16px;
-    color: #fff; /* Or any color that contrasts well with your slide colors */
+  display: none; /* Hide all text initially */
+  text-align: center;
+  font-size: 16px;
+  color: #fff; /* Or any color that contrasts well with your slide colors */
 }
 
 .active-text {
-    display: block; /* Show only the active text */
+  display: block; /* Show only the active text */
 }
 
 .red {
-    background-color: red;
+  background-color: red;
 }
 
 .blue {
-    background-color: blue;
+  background-color: blue;
 }
 
 .green {
-    background-color: green;
+  background-color: green;
 }
 
 .yellow {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 #left {
-    position: absolute;
-    left: 10px;
-    top: calc(50% - 20px);
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 20px);
 }
 
 #right {
-    position: absolute;
-    right: 10px;
-    top: calc(50% - 20px);
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 20px);
 }
 
 .arrow-button {
-    background-color: #d1c4af;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
+  background-color: #d1c4af;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
 }
 
-.arrow-button::before #left{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%) rotate(225deg);
-    border-right: 2px solid rgb(0, 0, 0);
-    border-top: 2px solid rgb(0, 0, 0);
-    background-color: #d1c4af;
+.arrow-button::before #left {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%) rotate(225deg);
+  border-right: 2px solid rgb(0, 0, 0);
+  border-top: 2px solid rgb(0, 0, 0);
+  background-color: #d1c4af;
 }
 
-.arrow-button::before #right{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%) rotate(225deg);
-    border-right: 2px solid rgb(0, 0, 0);
-    border-top: 2px solid rgb(0, 0, 0);
-    background-color: #d1c4af;
+.arrow-button::before #right {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%) rotate(225deg);
+  border-right: 2px solid rgb(0, 0, 0);
+  border-top: 2px solid rgb(0, 0, 0);
+  background-color: #d1c4af;
 }
 
 /* General Styles */
 body {
-    font-family: 'Georgia', serif;
-    background-color: #2b2b2b;
-    color: #d1c4af;
-    text-align: center;
-    padding: 50px;
+  font-family: "Georgia", serif;
+  background-color: #2b2b2b;
+  color: #d1c4af;
+  text-align: center;
+  padding: 50px;
 }
 
 header {
-    background-color: #3b3b3b;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid #555;
+  background-color: #3b3b3b;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #555;
 }
 
 header h1 {
-    margin: 0;
-    color: #fff;
+  margin: 0;
+  color: #fff;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #d1c4af;
+  text-decoration: none;
+  color: #d1c4af;
 }
 
 nav ul li a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 section {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 h2 {
-    color: #a7a9ab;
-    border-bottom: 2px solid #555;
-    padding-bottom: 5px;
+  color: #a7a9ab;
+  border-bottom: 2px solid #555;
+  padding-bottom: 5px;
 }
 
 .exhibit {
-    background-color: #3b3b3b;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+  background-color: #3b3b3b;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 .exhibit h3 {
-    color: #e2ded2;
+  color: #e2ded2;
 }
 
 footer {
-    background-color: #3b3b3b;
-    text-align: center;
-    padding: 10px;
-    border-top: 2px solid #555;
+  background-color: #3b3b3b;
+  text-align: center;
+  padding: 10px;
+  border-top: 2px solid #555;
 }
 
 footer p {
-    margin: 0;
-    color: #d1c4af;
+  margin: 0;
+  color: #d1c4af;
 }
 
 a {
-    color: #a7a9ab;
+  color: #a7a9ab;
 }
 
 a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 #disease {
-    background-color: #454444;
-    color: #d1c4af;
+  background-color: #454444;
+  color: #d1c4af;
 }
 
+#text-red {
+  border-bottom: solid 5px #6a994e;
+}
