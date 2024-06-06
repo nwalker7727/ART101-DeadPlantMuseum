@@ -1,11 +1,20 @@
 let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');
+const slideTexts = document.querySelectorAll('.slide-text');
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
         slide.style.transform = `translateX(${100 * (i - index)}%)`;
         console.log(index);
     });
+    slideTexts.forEach(text => {
+      text.classList.remove('active-text');
+  });
+
+  if (index % 2 === 0) {
+      slideTexts[index / 2].classList.add('active-text');
+  }
+  console.log(index);
 }
 
 function nextSlide() {
@@ -29,6 +38,7 @@ function prevSlide() {
         showSlide(slideIndex);
     }
 }
+showSlide(slideIndex);
 
 const URL = "https://perenual.com/api/pest-disease-list";
 
