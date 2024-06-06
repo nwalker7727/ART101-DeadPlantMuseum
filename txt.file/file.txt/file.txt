@@ -1,7 +1,6 @@
 h1 {
     text-align: center;
 }
-
 .carousel-container {
     background-image: url('../img/bg1.jpg');
     background-size: cover;
@@ -10,7 +9,6 @@ h1 {
     align-items: center;
     height: 100vh;
     margin: 0;
-    position: relative;
 }
 
 .carousel {
@@ -18,6 +16,7 @@ h1 {
     overflow: hidden;
     width: 200px;
     height: 200px;
+    
 }
 
 .slide {
@@ -25,19 +24,15 @@ h1 {
     transition: transform 1s ease;
     display: inline-block;
     width: 100%;
-    height: 100%;
+    height: 100%; /* Adjust as needed */
     position: relative;
 }
 
 .slide-text-container {
-    position: absolute;
-    bottom: -30px; /* Adjust this value to move text closer or further from the carousel */
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    margin-top: 20px; /* Adjust as needed */
 }
 
 .slide-text {
@@ -50,6 +45,8 @@ h1 {
 .active-text {
     display: block; /* Show only the active text */
 }
+
+/* Add any other styles you need */
 
 .red {
     background-color: red;
@@ -67,16 +64,17 @@ h1 {
     background-color: yellow;
 }
 
+
 #left {
     position: absolute;
     left: 10px;
-    top: calc(50% - 20px);
+    top: calc(50% - 20px); 
 }
 
 #right {
     position: absolute;
     right: 10px;
-    top: calc(50% - 20px);
+    top: calc(50% - 20px); 
 }
 
 .arrow-button {
@@ -102,8 +100,17 @@ h1 {
     background-color: #d1c4af;
 }
 
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+
 /* General Styles */
 body {
+    
     font-family: 'Georgia', serif;
     background-color: #2b2b2b;
     color: #d1c4af;
@@ -188,8 +195,7 @@ a:hover {
     color: #fff;
 }
 
-#disease {
+#disease{
     background-color: #454444;
     color: #d1c4af;
 }
-
