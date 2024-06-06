@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colorful Square Carousel</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 </head>
 <body>
     <h1>The Dead Plant Museum</h1>
@@ -32,8 +34,8 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <button onclick="prevSlide()">Previous</button>
-    <button onclick="nextSlide()">Next</button>
+    <button onclick="prevSlide()" id="left">Previous</button>
+    <button onclick="nextSlide()">Next</button> -->
     <section id="home">
         <h2>Welcome to the Dead Plant Museum</h2>
         <p>Explore the fascinating world of dead plants. Discover their stories and significance through our meticulously curated exhibits.</p>
@@ -50,6 +52,13 @@
             </div>
         <!-- Add more exhibits as needed -->
     </section>
+    <section id="Disease Facts">
+        <h2>Diseases</h2>
+            <button id = "disease"> Click Me for a Random Plant Disease </button>
+            <div id="diseased">
+                
+            </div>
+    </section>
     <section id="about">
         <h2>About Us</h2>
             <p> </p>
@@ -64,65 +73,3 @@
     <script src="./js/script.js"></script>
 </body>
 </html>
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dead Plant Museum</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="./js/script.js" defer></script>
-
-</head>
-    <body>
-        <header>
-            <h1>Dead Plant Museum</h1>
-            <div class="carousel-container">
-            <div class="carousel">
-                <div class="slide red"></div><div class="slide blue"></div><div class="slide green"></div><div class="slide yellow"></div>
-            </div>
-            <button onclick="prevSlide()">Previous</button>
-            <button onclick="nextSlide()">Next</button>
-        </div>   
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#exhibits">Exhibits</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="home">
-                <h2>Welcome to the Dead Plant Museum</h2>
-                <p>Explore the fascinating world of dead plants. Discover their stories and significance through our meticulously curated exhibits.</p>
-            </section>
-            <section id="exhibits">
-                <h2>Exhibits</h2>
-                <div class="exhibit">
-                    <h3>Exhibit 1: </h3>
-                    <p></p>
-                </div>
-                <div class="exhibit">
-                    <h3>Exhibit 2:</h3>
-                    <p></p>
-                </div>
-                Add more exhibits as needed
-            </section>
-            <section id="about">
-                <h2>About Us</h2>
-                <p> </p>
-            </section>
-            <section id="contact">
-                <h2>Contact Us</h2>
-                <p>If you have any questions or would like to learn more, please <a href="mailto:info@deadplantmuseum.com">contact us</a>.</p>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2024 Dead Plant Museum. All rights reserved.</p>
-        </footer>
-    </body>
-</html> -->
