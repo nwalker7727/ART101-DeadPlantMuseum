@@ -79,42 +79,54 @@ h1 {
   top: calc(50% - 20px);
 }
 
-.arrow-button {
-  background-color: #d1c4af;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  width: 100px;
-  height: 100px;
+.arrow-button-left {
+    background-color: #ab7c0e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
 }
 
-.arrow-button::before #left {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50px;
-  height: 50px;
-  transform: translate(-50%, -50%) rotate(225deg);
-  border-right: 2px solid rgb(0, 0, 0);
-  border-top: 2px solid rgb(0, 0, 0);
-  background-color: #d1c4af;
+.arrow-button-left::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(-50%, -50%) rotate(225deg);
+    width: 15px;
+    height: 15px;
+    border-right: 8px solid white;
+    border-top: 8px solid white;
+    background-color: #ab7c0e;
 }
 
-.arrow-button::before #right {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50px;
-  height: 50px;
-  transform: translate(-50%, -50%) rotate(225deg);
-  border-right: 2px solid rgb(0, 0, 0);
-  border-top: 2px solid rgb(0, 0, 0);
-  background-color: #d1c4af;
+.arrow-button-right {
+    background-color: #ab7c0e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+}
+
+.arrow-button-right::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translate(50%, -50%) rotate(45deg);
+    width: 15px;
+    height: 15px;
+    border-right: 8px solid white;
+    border-top: 8px solid white;
+    background-color: #ab7c0e;
 }
 
 /* General Styles */
@@ -206,6 +218,9 @@ a:hover {
 #disease {
   background-color: #454444;
   color: #d1c4af;
+  width: 300px;
+  height: 50px;
+  font-size: large;
 }
 
 #text-red {
