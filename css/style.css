@@ -67,6 +67,14 @@ h1 {
   background-color: yellow;
 }
 
+.purple {
+  background-color: purple;
+}
+
+.pink {
+  background-color: pink;
+}
+
 #left {
   position: absolute;
   left: 10px;
@@ -233,14 +241,17 @@ a:hover {
 
 #text-green {
   border-bottom: solid 5px #ab7c0e;
-  color: #d1c4af;
 }
 
 #text-yellow {
   border-bottom: solid 5px #ab7c0e;
 }
 
-img{
+#text-purple {
+  border-bottom: solid 5px #ab7c0e;
+}
+
+img {
   width: 100%;
   height: 100%;
 }
@@ -266,4 +277,3 @@ img{
     bottom: 0;
     left: 85px;
 } */
-

@@ -95,9 +95,9 @@ function playAudio() {
     var audio = document.getElementById('carousel-audio');
     audio.play().then(() => {
         // Audio is playing
-        document.removeEventListener('mouseover', playAudio);
+        document.removeEventListener('click', playAudio);
     }).catch(error => {
         console.log('Playback failed:', error);
     });
 }
-document.addEventListener('mouseover', playAudio);
+document.addEventListener('click', playAudio);
