@@ -80,53 +80,53 @@ h1 {
 }
 
 .arrow-button-left {
-    background-color: #ab7c0e;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
+  background-color: #ab7c0e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
 }
 
 .arrow-button-left::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50px;
-    transform: translate(-50%, -50%) rotate(225deg);
-    width: 15px;
-    height: 15px;
-    border-right: 8px solid white;
-    border-top: 8px solid white;
-    background-color: #ab7c0e;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translate(-50%, -50%) rotate(225deg);
+  width: 15px;
+  height: 15px;
+  border-right: 8px solid white;
+  border-top: 8px solid white;
+  background-color: #ab7c0e;
 }
 
 .arrow-button-right {
-    background-color: #ab7c0e;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
+  background-color: #ab7c0e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
 }
 
 .arrow-button-right::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 50px;
-    transform: translate(50%, -50%) rotate(45deg);
-    width: 15px;
-    height: 15px;
-    border-right: 8px solid white;
-    border-top: 8px solid white;
-    background-color: #ab7c0e;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translate(50%, -50%) rotate(45deg);
+  width: 15px;
+  height: 15px;
+  border-right: 8px solid white;
+  border-top: 8px solid white;
+  background-color: #ab7c0e;
 }
 
 /* General Styles */
@@ -224,5 +224,18 @@ a:hover {
 }
 
 #text-red {
+  border-bottom: solid 5px #6a994e;
+}
+
+
+#text-blue {
+  border-bottom: solid 5px #6a994e;
+}
+
+#text-green {
+  border-bottom: solid 5px #6a994e;
+}
+
+#text-yellow {
   border-bottom: solid 5px #6a994e;
 }
