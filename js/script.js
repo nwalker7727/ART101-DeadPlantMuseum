@@ -78,57 +78,13 @@ function ajaxSuccess(data) {
 }
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const images = document.querySelectorAll('.carousel .slide');
-  const audio = document.getElementById('carousel-audio');
-  let currentIndex = 0;
-
-  function showImage(index) {
-      images.forEach((img, i) => {
-          img.style.transform = `translateX(${100 * (i - index)}%)`;
-      });
-  }
-
-  function startCarousel() {
-      showImage(currentIndex);
-      if (audio) {
-          audio.play().catch(error => {
-              console.log("Audio playback failed: ", error);
-          });
-      }
-      setInterval(() => {
-          currentIndex = (currentIndex + 1) % images.length;
-          showImage(currentIndex);
-      }, 3000); // Change image every 3 seconds
-  }
-
-  startCarousel();
-});
-document.addEventListener('DOMContentLoaded', function() {
-  const images = document.querySelectorAll('.carousel .slide');
-  const audio = document.getElementById('carousel-audio');
-  let currentIndex = 0;
-
-  function showImage(index) {
-      images.forEach((img, i) => {
-          img.style.transform = `translateX(${100 * (i - index)}%)`;
-      });
-  }
-
-  function startCarousel() {
-      showImage(currentIndex);
-      setInterval(() => {
-          currentIndex = (currentIndex + 1) % images.length;
-          showImage(currentIndex);
-      }, 3000); // Change image every 3 seconds
-  }
-
-  document.getElementById('start-carousel-button').addEventListener('click', () => {
-      if (audio) {
-          audio.play().catch(error => {
-              console.log("Audio playback failed: ", error);
-          });
-      }
-      startCarousel();
-  });
-});
+function playAudio() {
+    var audio = document.getElementById('carousel-audio');
+    audio.play().then(() => {
+        // Audio is playing
+        document.removeEventListener('mouseover', playAudio);
+    }).catch(error => {
+        console.log('Playback failed:', error);
+    });
+}
+document.addEventListener('mouseover', playAudio);
