@@ -48,16 +48,7 @@ $("#disease").click(function(){
   $.ajax(ajaxObj);
 })
 
-const ajaxObj = {
-  url: URL,
-  data: {
-    key: "sk-uCEA6659018900ac35690",
-  },
-  type: "GET",
-  dataType: "json",
-  success: ajaxSuccess,
-  error: ajaxError
-}
+
 
 function ajaxSuccess(data) {
   const dataArray = data.data;
@@ -87,7 +78,57 @@ function ajaxSuccess(data) {
 }
 
 
-// create ajax error callback
-function ajaxError(request,error){
-	  console.log("Oops:", error);
-}
+document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('.carousel .slide');
+  const audio = document.getElementById('carousel-audio');
+  let currentIndex = 0;
+
+  function showImage(index) {
+      images.forEach((img, i) => {
+          img.style.transform = `translateX(${100 * (i - index)}%)`;
+      });
+  }
+
+  function startCarousel() {
+      showImage(currentIndex);
+      if (audio) {
+          audio.play().catch(error => {
+              console.log("Audio playback failed: ", error);
+          });
+      }
+      setInterval(() => {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
+      }, 3000); // Change image every 3 seconds
+  }
+
+  startCarousel();
+});
+document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('.carousel .slide');
+  const audio = document.getElementById('carousel-audio');
+  let currentIndex = 0;
+
+  function showImage(index) {
+      images.forEach((img, i) => {
+          img.style.transform = `translateX(${100 * (i - index)}%)`;
+      });
+  }
+
+  function startCarousel() {
+      showImage(currentIndex);
+      setInterval(() => {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
+      }, 3000); // Change image every 3 seconds
+  }
+
+  document.getElementById('start-carousel-button').addEventListener('click', () => {
+      if (audio) {
+          audio.play().catch(error => {
+              console.log("Audio playback failed: ", error);
+          });
+      }
+      startCarousel();
+  });
+});
