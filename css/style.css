@@ -235,3 +235,31 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.inside-list {
+  list-style-position: inside;
+}
+
+/* .pedestal {
+    width: 200px;
+    height: 50px;
+    background-color: #d3d3d3;
+    border-radius: 10px 10px 0 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pillar {
+    width: 30px;
+    height: 100px;
+    background-color: #a9a9a9;
+    position: absolute;
+    bottom: 0;
+    left: 85px;
+} */
+

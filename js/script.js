@@ -48,15 +48,28 @@ $("#disease").click(function(){
   $.ajax(ajaxObj);
 })
 
+const ajaxObj = {
+    url: URL,
+    data: {
+      key: "sk-uCEA6659018900ac35690",
+    },
+    type: "GET",
+    dataType: "json",
+    success: ajaxSuccess,
+    error: ajaxError
+}
 
+function ajaxError(request,error){
+    console.log("Oops:", error);
+}
 
 function ajaxSuccess(data) {
   const dataArray = data.data;
   console.log(dataArray.length)
   const randomIndex = Math.floor(Math.random() * dataArray.length);
-  console.log(randomIndex)
+//   console.log(randomIndex)
   const element1 = dataArray[randomIndex];
-  console.log("element1:", element1);
+//   console.log("element1:", element1);
   const question1 = element1.description[0].subtitle;
   const answer1 = element1.description[0].description;
   const question2 = element1.description[1].subtitle;
